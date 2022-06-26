@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "LEARN REDUX",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "LEARN REACT",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "LEARN REACT-REDUX",
+      "status": false
+    },
+    {
+      "id": 4,
+      "title": "LEARN TYPESCRIPT",
+      "status": false
+    },
+    {
+      "title": "add todo",
+      "status": false,
+      "id": 5
+    }
+  ]
+}
