@@ -9,8 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
 
-// axios.defaults.baseURL = "http://localhost:8080";
-// axios.defaults.headers.post['Content-Type'] = "application/json";
+axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.headers.post['Content-Type'] = "application/json";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

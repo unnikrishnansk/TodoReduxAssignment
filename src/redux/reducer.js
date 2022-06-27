@@ -1,8 +1,9 @@
 import * as types from "./actionTypes";
+import { loadData, saveData } from "../utilis/localStorage";
 
 
 const initialState = {
-    todos : [],
+    todos : loadData('todos') || [],
     isLoading : false,
     isError : false,
 }
@@ -19,9 +20,11 @@ const reducer = (state=initialState , action) => {
             };
 
             case types.GET_TODO_LIST_SUCCESS:
+                let newTodo = [state.todos,payload];
+                saveData("todos",newTodo)
             return  {
                 ...state,
-                todos : payload,
+                todos : newTodo,
                 isLoading : false,
                 isError : false,
             };
